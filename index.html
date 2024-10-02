@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheatsheet</title>
+    <link rel="stylesheet" href="./resources/css/index.css" type="text/css" >
+</head>
+<body>
+    <header>
+        <h1>HTML &amp; CSS tahák</h1>
+    </header>
+    <h2>HTML elementy</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    Tag
+                </th>
+                <th>
+                    Popis
+                </th>
+                <th>
+                    Příklad
+                </th>
+                <th>
+                    Odkaz
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th colspan="4">
+                    Obsah hlavičky stránky <code>&lt;head&gt;</code>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <code>&lt;link&gt;</code>
+                </td>
+                <td>
+                    Propojení HTML souboru s jinými (například CSS)
+                </td>
+                <td>
+                    <code>&lt;link rel="stylesheet" href="./resources/ccs/index.css" type="text/css" &gt;</code>
+                </td>
+                <td>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link" target="_blank">MDN</a>
+                </td>
+            </tr>
+            <tr>
+                <th colspan="4">
+                    Tabulky
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <code>&lt;table&gt;</code>
+                </td>
+                <td>
+                    Obsahuje prvky, které tvoří tabulku.
+                </td>
+                <td>
+                    <code>
+                        &lt;table&gt;...&lt;/table&gt;
+                    </code>
+                </td>
+                <td>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table" target="_blank">MDN</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>&lt;thead&gt;</code>
+                </td>
+                <td>
+                    Prvek, který označuje hlavičku tabulky.
+                </td>
+                <td>
+                    <code>
+                        &lt;thead&gt;...&lt;/thead&gt;
+                    </code>
+                </td>
+                <td>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/thead" target="_blank">MDN</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>&lt;tbody&gt;</code>
+                </td>
+                <td>
+                    Prvek, který označuje tělo tabulky.
+                </td>
+                <td>
+                    <code>
+                        &lt;tbody&gt;...&lt;/tbody&gt;
+                    </code>
+                </td>
+                <td>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody" target="_blank">MDN</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>&lt;tfoot&gt;</code>
+                </td>
+                <td>Prvek, který označuje patičku tabulky.</td>
+                <td>
+                    <code>
+                        &lt;tfoot&gt;...&lt;/tfoot&gt;
+                    </code>
+                </td>
+                <td>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tfoot" target="_blank">MDN</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>&lt;tr&gt;</code>
+                </td>
+                <td>
+                    Řádek tabulky (table row).
+                </td>
+                <td>
+                    <code>
+                        &lt;tr&gt;...&lt;/tr&gt;
+                    </code>
+                </td>
+                <td>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tr" target="_blank">MDN</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>&lt;th&gt;</code>
+                </td>
+                <td>
+                    Prvek označující buňku hlavičky.
+                </td>
+                <td>
+                    <code>
+                        &lt;th&gt;...&lt;/th&gt;
+                    </code>
+                </td>
+                <td>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/th#headers" target="_blank">MDN</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>&lt;td&gt;</code>
+                </td>
+                <td>
+                    Buňka tabulky
+                </td>
+                <td>
+                    <code>
+                        &lt;td&gt;...&lt;/td&gt;
+                    </code>
+                </td>
+                <td>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/td" target="_blank">MDN</a>
+                </td>
+            </tr>
+            <tr>
+                <th colspan="4">
+                    Ostatní
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        &lt;code&gt;
+                    </code>
+                </td>
+                <td>
+                    Naformátuje úryvky textu jako kód
+                </td>
+                <td>
+                    <code>&lt;code&gt;function()&lt;/code&gt;</code>
+                </td>
+                <td>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code" target="_blank">MDN</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>CSS vlastnosti</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    Vlastnost
+                </th>
+                <th>
+                    Popis
+                </th>
+                <th>
+                    Příklad
+                </th>
+                <th>
+                    Odkaz
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <code>
+                        background-color
+                    </code>
+                </td>
+                <td>
+                    Nastaví barvu pozadí elementu
+                </td>
+                <td>
+                    <code>
+                        thead {<br>
+                        &nbsp;&nbsp;background-color: #0087e0;<br>
+                        }
+                    </code>
+                </td>
+                <td>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-color" target="_blank">MDN</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>border</code>
+                </td>
+                <td>
+                    Ohraničí element čárou s různými styly a barvou
+                </td>
+                <td>
+                    <code>
+                        table, th, td {<br>
+                        &nbsp;&nbsp;border: 1px solid black;<br>
+                        }
+                    </code>
+                </td>
+                <td>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border" target="_blank">MDN</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>border-collapse</code>
+                </td>
+                <td>
+                    Sloučí ohraničení buňěk a tabulky do jedné čáry
+                </td>
+                <td>
+                    <code>
+                        table {<br>
+                    &nbsp;&nbsp;border-collapse: collapse;<br>
+                    }
+                    </code>
+                </td>
+                <td>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-collapse" target="_blank">MDN</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        border-radius
+                    </code>
+                </td>
+                <td>
+                    Zaoblí ohraničení prvku
+                </td>
+                <td>
+                    <code>
+                        td {<br>
+                            &nbsp;&nbsp;border-radius: 20px;<br>
+                            }
+                    </code>
+                </td>
+                <td>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius">MDN</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <code>
+                        font-family
+                    </code>
+                </td>
+                <td>
+                    Nastaví font pro daný element. Je možné využít více možností, pokud by jedna nebyla 
+                    podporována prohlížečem.
+                </td>
+                <td>
+                    <code>
+                        body {<br>
+                        &nbsp;&nbsp;font-family: Arial, Helvetica, sans-serif;<br>
+                        }
+                    </code>
+                </td>
+                <td>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family" target="_blank">MDN</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Návody</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    Dotaz
+                </th>
+                <th>
+                    Popis
+                </th>
+                <th>
+                    Příkladd
+                </th>
+                <th>
+                    Odkaz
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>
+                    Jak vycentrovat tabulku?
+                </th>
+                <td>
+                    Pravý a levý <code>margin</code> se nastaví na <code>auto</code>. Tím se vycentruje objekt do prostřed stránky
+                    nebo do prostřed nadřazeného prvku.
+                </td>
+                <td>
+                    <code>
+                        .center {<br>
+                        &nbsp;&nbsp;margin-left: auto;<br>
+                        &nbsp;&nbsp;margin-right: auto;<br>
+                        }
+                    </code>
+                </td>
+                <td>
+                    <a href="https://www.w3schools.com/HOWTO/howto_css_table_center.asp" target="_blank">w3schools</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
