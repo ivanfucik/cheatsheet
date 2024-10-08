@@ -171,11 +171,29 @@
             <tr>
                 <td>
                     <code>
+                        &lt;button&gt;
+                    </code>
+                </td>
+                <td>
+                    Vytvoří tlačítko.
+                </td>
+                <td>
+                    <code>
+                        &lt;button type="button"&gt;Odeslat&lt;/button&gt;
+                    </code>
+                </td>
+                <td>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button" target="_blank">MDN</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
                         &lt;code&gt;
                     </code>
                 </td>
                 <td>
-                    Naformátuje úryvky textu jako kód
+                    Naformátuje úryvky textu jako kód.
                 </td>
                 <td>
                     <code>&lt;code&gt;function()&lt;/code&gt;</code>
@@ -227,7 +245,9 @@
             </tr>
             <tr>
                 <td>
-                    <code>border</code>
+                    <code>
+                        border
+                    </code>
                 </td>
                 <td>
                     Ohraničí element čárou s různými styly a barvou
@@ -281,7 +301,22 @@
                     <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius">MDN</a>
                 </td>
             </tr>
-            
+            <tr>
+                <td>
+                    <code>
+                        display
+                    </code>
+                </td>
+                <td>
+                    Umožňuje změnit zobrazení prvků (například v řadě).
+                </td>
+                <td>
+
+                </td>
+                <td>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display" target="_blank">MDN</a>
+                </td>
+            </tr>
             <tr>
                 <td>
                     <code>
@@ -301,6 +336,141 @@
                 </td>
                 <td>
                     <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family" target="_blank">MDN</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        font-size
+                    </code>
+                </td>
+                <td>
+                    Nastaví velikost fontu. Lze využívat různé velikosti např. mezi stavy u tlačítek.
+                </td>
+                <td>
+                    <code>
+                        p {<br>
+                        &nbsp;&nbsp;font-size: 2em;<br>
+                          }
+                    </code>
+                </td>
+                <td>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size" target="_blank">MDN</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        text-decoration
+                    </code>
+                </td>
+                <td>
+                    Určuje například zrušení podržení u odkazů.
+                </td>
+                <td>
+                    <code>
+                        a {<br>
+                            &nbsp;&nbsp;text-decoration: none;<br>
+                          }
+                    </code>
+                </td>
+                <td>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration" target="_blank">MDN</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        transition
+                    </code>
+                </td>
+                <td>
+                    Definuje přechod mezi různými stavy (například <code>:hover</code> a <code>:active</code>)
+                </td>
+                <td>
+                    <code>
+                        .activity:hover {<br>
+                        &nbsp;&nbsp;background-color: #fff;<br>
+                        &nbsp;&nbsp;color: #5495ff;<br>
+                        &nbsp;&nbsp;transition: color .1s ease-in, background-color .1s ease-in;<br>
+                          }
+                    </code>
+                </td>
+                <td>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition" target="_blank">MDN</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>CSS pseudo třídy</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    Pseudo-třída
+                </th>
+                <th>
+                    Popis
+                </th>
+                <th>
+                    Odkaz
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <code>
+                        :hover
+                    </code>
+                </td>
+                <td>
+                    Styl se aktivuje při najetí myši na prvek. Je důležité dodržet pozadí LVHA (link - visited - hover - active).
+                </td>
+                <td>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:hover" target="_blank">MDN</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>CSS pseudo prvky</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    Pseudo-prvek
+                </th>
+                <th>
+                    Popis
+                </th>
+                <th>
+                    Příklad
+                </th>
+                <th>
+                    Odkaz
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <code>
+                        ::before
+                    </code>
+                </td>
+                <td>
+                    Používá se s vlasností <code>content</code> k doplnění kosmetických prvků k textu.
+                </td>
+                <td>
+                    <code>
+                        .breadcrumb li+li::before {<br>
+                        &nbsp;&nbsp;padding: 10px;<br>
+                        &nbsp;&nbsp;content: ">";<br>
+                        }
+                    </code>
+                </td>
+                <td>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::before" target="_blank">MDN</a>
                 </td>
             </tr>
         </tbody>
@@ -342,6 +512,26 @@
                 </td>
                 <td>
                     <a href="https://www.w3schools.com/HOWTO/howto_css_table_center.asp" target="_blank">w3schools</a>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Následující selektor jdoucí po sourozenci (Next-sibling combinator +)
+                </th>
+                <td>
+                    Pomocí znaku <code>+</code> se označí selektor jdoucí po jiném selektoru, na který se aplikuje daný styl.
+                </td>
+                <td>
+                    <code>
+                        .breadcrumb li+li::before {<br>
+                            &nbsp;&nbsp;padding: 10px;<br>
+                            &nbsp;&nbsp;content: ">";<br>
+                            }
+                    </code>
+                    <p>Na prvek <code>&lt;li&gt;</code> jdoucí za jiným <code>&lt;li&gt;</code> se aplikuje styl.</p>
+                </td>
+                <td>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Next-sibling_combinator" target="_blank">MDN</a>
                 </td>
             </tr>
         </tbody>
